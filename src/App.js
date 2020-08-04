@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     right: '0',    
     marginRight: 'auto',
     marginLeft: 'auto',
+    color: 'white',
     backgroundColor: theme.palette.success.main,
     '&:hover': {
       backgroundColor: theme.palette.success.dark,
@@ -55,8 +56,10 @@ function App() {
   const onChangeTab = (event, newValue) => {
     setCurrentTab(newValue);
   }
-
+  const insertCoinAudio = new Audio("/earn_single_coin.mp3")
+  const payCoinAudio = new Audio("/spend_coin.mp3")
   const increaseFichas = () => {
+    insertCoinAudio.play();
     const newFichas = fichas + 1;
     localStorage.setItem('fichas', newFichas.toString())
     setFichas(newFichas)
@@ -64,6 +67,7 @@ function App() {
   }
 
   const decreaseFichas = () => {
+    payCoinAudio.play();
     if(fichas <= 0) {
       alert('Vai treinar, seu sedentário kkk')
       return;
