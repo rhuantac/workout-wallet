@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Carteira do Treino",
+  "name": "Controle de fichas de treino para jogos.",
   "icons": [
     {
       "src": "favicon.ico",
