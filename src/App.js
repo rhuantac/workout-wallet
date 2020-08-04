@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Tab from '@material-ui/core/Tab';
-import { AppBar, Tabs, makeStyles, Container, Typography, Button } from '@material-ui/core';
+import { AppBar, Tabs, makeStyles, Typography, Button } from '@material-ui/core';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney'; 
 import Box from '@material-ui/core/Box'
 const useStyles = makeStyles((theme) => ({
   root: {
